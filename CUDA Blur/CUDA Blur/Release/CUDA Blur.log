@@ -1,39 +1,12 @@
-﻿Build started 2013-10-24 12:22:04 AM.
-     1>Project "C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\CUDA Blur\CUDA Blur.vcxproj" on node 2 (Build target(s)).
-     1>AddCudaCompileDeps:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DNDEBUG /D_CONSOLE /D_MBCS /IC:\opencv\build\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /I. /FIcuda_runtime.h /c "C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\CUDA Blur\student_func.cu" 
-       CudaBuild:
-         Compiling CUDA source file student_func.cu...
-         cmd.exe /C "C:\Users\Eran-Tasker (Sager)\AppData\Local\Temp\tmp320a3143309e4d9785210fbdf01daf69.cmd"
-         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -IC:\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\student_func.cu.obj "C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\CUDA Blur\student_func.cu"
+﻿Build started 26/01/2014 23:58:10.
+     1>Project "C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2012\Projects\CUDA-Projects\CUDA Blur\CUDA Blur\CUDA Blur.vcxproj" on node 2 (Clean target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\Eran-Tasker (Sager)\AppData\Local\Temp\tmpc910e74e2a994c6f9d2ac66b0f996764.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -IC:\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile      -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\student_func.cu.obj "C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2012\Projects\CUDA-Projects\CUDA Blur\CUDA Blur\student_func.cu" -clean
          
-         C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\CUDA Blur>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2012 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -IC:\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\student_func.cu.obj "C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\CUDA Blur\student_func.cu" 
-       ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\opencv\build\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt compare.cpp HW2.cpp main.cpp reference_calc.cpp
-         compare.cpp
-         HW2.cpp
-         main.cpp
-         reference_calc.cpp
-     1>reference_calc.cpp(33): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\Release\CUDA Blur.exe" /NOLOGO /LIBPATH:C:\opencv\build\x86\vc11\lib /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib opencv_core246.lib opencv_imgproc246.lib opencv_highgui246.lib opencv_ml246.lib opencv_video246.lib opencv_features2d246.lib opencv_calib3d246.lib opencv_objdetect246.lib opencv_contrib246.lib opencv_legacy246.lib opencv_flann246.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\Release\CUDA Blur.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\Release\CUDA Blur.lib" /MACHINE:X86 /SAFESEH Release\student_func.cu.obj
-         Release\compare.obj
-         Release\HW2.obj
-         Release\main.obj
-         Release\reference_calc.obj
-         Generating code
-         Finished generating code
-         CUDA Blur.vcxproj -> C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\Release\CUDA Blur.exe
-       PostBuildEvent:
-         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\Release\"
-         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\Release\"
-         :VCEnd
-         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart*.dll" "C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\Release\"
-         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart32_55.dll
-         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\cudart64_55.dll
-                 2 file(s) copied.
-     1>Done Building Project "C:\Users\Eran-Tasker (Sager)\documents\visual studio 2012\Projects\CUDA Blur\CUDA Blur\CUDA Blur.vcxproj" (Build target(s)).
+         C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2012\Projects\CUDA-Projects\CUDA Blur\CUDA Blur>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin"  -IC:\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v5.5\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile      -DWIN32 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Zi  /MD  " -o Release\student_func.cu.obj "C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2012\Projects\CUDA-Projects\CUDA Blur\CUDA Blur\student_func.cu" -clean 
+     1>Done Building Project "C:\Users\Eran-Tasker (Sager)\Documents\Visual Studio 2012\Projects\CUDA-Projects\CUDA Blur\CUDA Blur\CUDA Blur.vcxproj" (Clean target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:11.32
+Time Elapsed 00:00:00.71
